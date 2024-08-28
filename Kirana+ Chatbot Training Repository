@@ -1,0 +1,68 @@
+This repository contains the code, training data, and setup instructions for the Kirana+ chatbot, which will assist stores in registering on the platform and help consumers place orders. The chatbot is built and trained using the IBM Watson platform.
+
+Table of Contents
+Project Overview
+Getting Started
+Prerequisites
+Installation
+Training the Chatbot
+Usage
+Contributing
+License
+
+
+Project Overview
+The Kirana+ chatbot is designed to facilitate seamless communication between local stores and consumers, enabling easy order placements and registrations. The chatbot leverages IBM Watson Assistant for natural language processing and understanding.
+
+Getting Started
+To get a local copy of the repository and start training the chatbot, follow the steps below.
+
+Prerequisites
+An IBM Cloud account. Sign up here if you don't have one.
+Node.js installed on your local machine.
+IBM Watson SDK for Node.js, which can be installed via npm.
+
+Installation
+Clone the repository:
+git clone https://github.com/your-username/kirana-plus-chatbot.git
+cd kirana-plus-chatbot
+
+Install required dependencies:
+npm install
+
+Set up IBM Watson Assistant:
+
+Create an IBM Watson Assistant service instance on IBM Cloud.
+Note down the API Key, URL, and Workspace ID.
+
+Configure environment variables:
+
+Rename .env.example to .env and add your credentials:
+WATSON_ASSISTANT_APIKEY=your_api_key
+WATSON_ASSISTANT_URL=your_service_url
+WATSON_ASSISTANT_WORKSPACE_ID=your_workspace_id
+
+Training the Chatbot
+Prepare training data:
+
+Training data should be in a JSON format compatible with IBM Watson Assistant. For reference, see the Watson Assistant API Documentation.
+Upload the training data:
+
+Use the Watson Assistant web interface or the API to upload your training data.
+
+Run the training script:
+npm run train
+
+Usage
+Once trained, the chatbot can be tested using the IBM Watson Assistant interface or via the command line:
+npm run start
+
+Contributing
+Contributions are welcome! Please read our contribution guidelines for more details.
+
+License
+Distributed under the MIT License. See LICENSE for more information.
+
+
+
+
